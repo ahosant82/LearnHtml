@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+
+    <style>
+        .hrNav{
+
+        }
+
+        .hrNav > ul{
+            display: flex;
+        }
+
+        .hrNav ul li{
+            list-style: none;
+            padding: .5rem 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .hrNav ul li a{
+            color: grey;
+            text-decoration: none;
+
+
+        }
+
+        .hrNav ul li:hover{
+            background-color: indigo;
+            text-transform: 1s;
+        }
+        .hrNav ul li:hover a{
+            color: ivory;
+
+        }
+
+        
+        .has-dpdwn > ul{
+            display: none;
+            position: absolute;
+            background-color: indigo;
+            padding-left: 0;
+            z-index: 99;
+        }
+
+        .has-dpdwn:hover > ul{
+            display: block;
+        }
+
+        .has-dpdwn ul li{
+            
+        }
+
+        .has-dpdwn .sub-dpdwn{
+            position: absolute;
+            margin-left: 60%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+   <h1> defarnet types of navbar </h1>
+   <!-- horizentsl navbar  -->
+   <nav class="hrNav">
+       <ul>
+           <li><a href="#">home</a></li>
+           <li><a href="#">about</a></li>
+            <li class="has-dpdwn"><a href="#">product</a>
+                <ul class="dpdwn">
+                    <li class="has-dpdwn"><a href="#">electronisc</a>
+                        <ul class="sub-dpdwn">
+                            <li><a href="#">televisson</a></li>
+                            <li><a href="#">refrigetor</a></li>
+                            <li><a href="#">ac</a></li>
+                            <li><a href="#">fen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">home applainec</a></li>
+                    <li class="has-dpdwn"><a href="#">medicine</a>
+                        <ul class="sub-dpdwn">
+                            <li><a href="#">genarel</a></li>
+                            <li><a href="#">antivaitic</a></li>
+                            <li><a href="#">cepsule</a></li>
+                            <li><a href="#">luqued</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">foods</a></li>
+                </ul>
+            </li> 
+           <li><a href="#">gellary</a></li>
+           <li><a href="#">contuct</a></li>
+       </ul>
+   </nav>
+
+</body>
+</html>
